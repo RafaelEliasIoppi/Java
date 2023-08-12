@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex04</title>
+    <style>
+        body{
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício 04</h1>
+    <script>
+        var n1 = 10.50
+        var nome = window.prompt('Nome:' )
+        document.writeln(`Olá, ${nome} seu nome tem ${nome.length} letras.</br>`)
+        document.writeln(`Em maiusculo ${nome.toUpperCase()}.</br>`)
+        document.writeln(`Em minusculo ${nome.toLowerCase()}.</br>`)
+        document.write(`${n1.toFixed(2).replace('.', ',')}</br>`)   // troca o ponto pela virgula
+        document.write(`${n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`)
+         </script>
+    
+</body>
+</html>

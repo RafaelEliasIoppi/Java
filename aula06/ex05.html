@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciando Dom</title>
+    <style>
+        body {
+            background-color: azure;
+            color:black;   
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size:1.4em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando os Estudos</h1>
+    <p>Aqui vai o resultado</p>
+    <div id="msg01">TEsttando</div>
+    <p>Aprendendo a usar <strong>DOM</strong> em  js</p>
+    <div id="msg">Clique em mim</div>
+    <SCRipt>
+        var c = window.document.querySelector('div#msg')
+        var d = window.document.getElementById('msg')
+        var p1 = window.document.getElementsByTagName('p')[1]
+        window.document.write(`Está escrito assim: ${p1.innerHTML}`)
+        p1.style.color = 'blue'
+        d.style.backgroundColor = 'green'
+        c.style.backgroundColor = 'red '
+    </SCRipt>
+</body>
+</html>
